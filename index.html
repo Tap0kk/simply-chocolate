@@ -19,69 +19,44 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
+
   <body>
     <!-- header -->
     <header class="page-header">
       <div class="container header-container">
-        <nav class="header-nav">
-          <a class="header-logo" href=""
-            >SIMPLY<span class="logo-part"> CHOCOLATE</span
-            ><svg class="logo-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-logo"></use>
-            </svg>
-          </a>
-          <ul class="header-nav-list">
-            <li class="header-nav-item">
-              <a class="header-nav-link" href="">Home</a>
-            </li>
-            <li class="header-nav-item">
-              <a class="header-nav-link" href="">How it’s made?</a>
-            </li>
-            <li class="header-nav-item">
-              <a class="header-nav-link" href="">Chocolate is loved</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="header-soc-list">
-          <li class="header-soc-item">
-            <a
-              href="http://instagram.com/"
-              class="header-soc-link"
-              target="_blank"
-              rel="noreferrer noopener"
-              ><svg class="header-soc-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="header-soc-item">
-            <a
-              href="http://twitter.com/"
-              class="header-soc-link"
-              target="_blank"
-              rel="noreferrer noopener"
-              ><svg class="header-soc-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <a href="" class="logo"
+          >SIMPLY <span class="logo-part">CHOCOLATE</span>
+          <svg width="21" height="21">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <button class="menu-btn" type="button">
+          <svg class="menu-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
+
+    <!-- main -->
     <main>
       <!-- hero -->
       <section class="hero">
-        <div class="hero-container container">
+        <div class="container hero-container">
           <h1 class="hero-title">
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
           </h1>
-          <div class="buttons-container">
-            <button type="button" class="hero-btn">Buy now</button>
-            <a href="" class="hero-link">How it’s made</a>
-            <a href="" class="hero-scroll"
-              >scroll down<svg class="hero-scroll-icon" width="22" height="22">
+          <div class="hero-btn-container">
+            <button class="hero-btn" type="button">Buy now</button>
+            <a class="hero-link" href="">How it’s made</a>
+          </div>
+          <div class="hero-scroll-container">
+            <p class="hero-text">scroll down</p>
+            <a class="hero-scroll" href=""
+              ><svg class="hero-scroll-icon" width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
             </a>
@@ -91,8 +66,8 @@
 
       <!-- benefits -->
       <section class="benefits">
-        <div class="container">
-          <h2 class="title visually-hidden">Benefits</h2>
+        <div class="benefits-container">
+          <h2 class="visually-hidden">benefits</h2>
           <ul class="benefits-list">
             <li class="benefits-item">
               <h3 class="benefits-title">Unsurpassed taste</h3>
@@ -126,138 +101,66 @@
         </div>
       </section>
 
-      <!-- ingridients -->
-      <section class="ingridients">
-        <div class="container">
-          <h2 class="title ingridients-title">
+      <!-- products -->
+      <section class="products">
+        <div class="container products-container">
+          <h2 class="products-title">
             IT ALL ADDS UP TO ONE EXCEPTIONAL
-            <span class="title-part">TASTE</span> SENSATION
+            <span class="orange">TASTE</span> SENSATION
           </h2>
-          <p class="ingridients-text">
+          <p class="products-text">
             At Simply Chocolate, we believe that the secret to exceptional
             chocolate is in the details. From the sourcing of the finest
             ingredients to the careful crafting of each individual piece, every
             step of our process adds up to one exceptional taste sensation.
           </p>
-          <ul class="ingridients-list">
-            <li class="ingridients-item">
+          <ul class="products-list">
+            <li class="products-item">
               <img
                 src="./images/chocolate.png"
-                alt=""
-                class="ingridients-image"
-                width="206"
-                height="160"
+                alt="Bar of chocolate"
+                class="products-photo"
+                width="224"
+                height="171"
               />
-              <p class="ingridients-desc">MILK CHOCOLATE</p>
-              <div class="cover">
-                <p class="cover-title">Milk chocolate</p>
-                <ul class="cover-list">
-                  <li class="cover-item">
-                    <a href="" class="cover-link">chocolate</a>
-                  </li>
-                  <li class="cover-item">
-                    <a href="" class="cover-link">the benefits</a>
-                  </li>
-                </ul>
-                <p class="cover-text">
-                  Milk chocolate is a solid chocolate confectionery containing
-                  cocoa, sugar and milk. It is the most consumed type of
-                  chocolate. Chocolate was originally sold and consumed as a
-                  beverage in pre-Columbian times. Although four-fifths of all
-                  milk chocolate is sold in the United States and Europe.
-                </p>
-              </div>
+              <p class="products-desc">MILK CHOCOLATE</p>
             </li>
-            <li class="ingridients-item">
+            <li class="products-item">
               <img
                 src="./images/milk.png"
-                alt=""
-                class="ingridients-image"
-                width="206"
-                height="160"
+                alt="Bottle of milk"
+                class="products-photo"
+                width="224"
+                height="171"
               />
-              <p class="ingridients-desc">MILK</p>
-              <div class="cover">
-                <p class="cover-title">Milk</p>
-                <ul class="cover-list">
-                  <li class="cover-item">
-                    <a href="" class="cover-link">milk</a>
-                  </li>
-                  <li class="cover-item">
-                    <a href="" class="cover-link">the benefits</a>
-                  </li>
-                </ul>
-                <p class="cover-text">
-                  Milk is a white liquid food produced by the mammary glands of
-                  mammals. It is the primary source of nutrition for young
-                  mammals (including breastfed human infants) before they are
-                  able to digest solid food.Early-lactation milk, which is
-                  called colostrum, contains antibodies that strengthen the
-                  immune system.
-                </p>
-              </div>
+              <p class="products-desc">MILK</p>
             </li>
-            <li class="ingridients-item">
+            <li class="products-item">
               <img
                 src="./images/nuts.png"
-                alt=""
-                class="ingridients-image"
-                width="206"
-                height="160"
+                alt="Nuts"
+                class="products-photo"
+                width="224"
+                height="171"
               />
-              <p class="ingridients-desc">NUTS</p>
-              <div class="cover">
-                <p class="cover-title">Nuts</p>
-                <ul class="cover-list">
-                  <li class="cover-item">
-                    <a href="" class="cover-link">nuts</a>
-                  </li>
-                  <li class="cover-item">
-                    <a href="" class="cover-link">the benefits</a>
-                  </li>
-                </ul>
-                <p class="cover-text">
-                  Almonds, pistachios, and walnuts are some types of nuts that
-                  contain healthy nutrients. When eaten as part of a
-                  nutrient-dense diet, these 9 nuts may offer benefits such as
-                  reducing your risk of heart disease. They’re a good source of
-                  fiber, healthy fats, and plant protein. Plus, they’re great on
-                  their own.
-                </p>
-              </div>
+              <p class="products-desc">NUTS</p>
             </li>
-            <li class="ingridients-item">
+            <li class="products-item">
               <img
                 src="./images/semi-sweet-choco.png"
-                alt=""
-                class="ingridients-image"
-                width="206"
-                height="160"
+                alt="Semi sweet choco"
+                class="products-photo"
+                width="224"
+                height="171"
               />
-              <p class="ingridients-desc">SEMI - SWEET CHOCOLATE</p>
-              <div class="cover">
-                <p class="cover-title">semi - sweet chocolate</p>
-                <ul class="cover-list">
-                  <li class="cover-item">
-                    <a href="" class="cover-link">sweet chocolate</a>
-                  </li>
-                  <li class="cover-item">
-                    <a href="" class="cover-link">the benefits</a>
-                  </li>
-                </ul>
-                <p class="cover-text">
-                  Semi-sweet chocolate has a cocoa solid content of 35 to 65%.
-                  One of the best ways to gain an understanding of this type of
-                  chocolate is to compare it to a different type of chocolate.
-                  Semisweet is darker than milk chocolate. In a taste
-                  comparison, it has a slightly bitter taste whereas milk
-                  chocolate is sweeter and more mellow.
-                </p>
-              </div>
+              <p class="products-desc">SEMI - SWEET CHOCOLATE</p>
             </li>
           </ul>
         </div>
       </section>
     </main>
+
+    <!-- footer -->
+    <footer></footer>
   </body>
 </html>

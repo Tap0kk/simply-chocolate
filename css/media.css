@@ -1,0 +1,19 @@
+@media screen and (min-width: 365px) {
+  .container {
+    max-width: 365px;
+  }
+  .hero-container {
+    max-width: 335px;
+  }
+  .hero-btn-container {
+    gap: 14px;
+  }
+  .hero-btn {
+    padding: 12px 28px;
+    font-weight: 600px;
+  }
+  .hero-link {
+    padding: 12px 28px;
+    font-weight: 600px;
+  }
+}
