@@ -16,4 +16,7 @@
     padding: 12px 28px;
     font-weight: 600px;
   }
+  .benefits-container {
+    max-width: 335px;
+  }
 }

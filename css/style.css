@@ -203,10 +203,14 @@ body {
 }
 
 /* benefits */
-
-.benefits-container {
+.benefits {
   background-color: #1e1823;
+}
+.benefits-container {
   padding: 20px;
+  width: 100%;
+  max-width: 290px;
+  margin: 0 auto;
 }
 
 .benefits-list {
